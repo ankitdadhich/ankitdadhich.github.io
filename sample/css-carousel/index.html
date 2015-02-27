@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <div style="mainWrap">
+    <nav>
+
+      <a href="#" class="inklogo">
+        <img src="http://inkoniq.com/redesign/wp-content/themes/inkoniq/images/inkoniq_logo.png" class="logo">
+      </a>
+      <!-- this label and button will be visible onyl in small screen -->
+      <label for="show-menu" class="show-menu">Show Menu</label>
+      <input type="checkbox" id="show-menu" role="button">
+
+      <ul id="menu" class="menu">
+
+        <li><a href="#"><i class="icon-home"></i>HOME</a>
+
+        </li>
+        <li><a href="#"><i class="icon-user"></i>ABOUT</a>
+        </li>
+        <li><a href="#"><i class="icon-camera"></i>PORTFOLIO</a>
+          <ul class="sub-menu">
+            <li><a href="#">Sub-Menu 1</a>
+            </li>
+            <li><a href="#">Level 3 Menu</a>
+              <ul>
+                <li><a href="#">Sub-Menu 4</a>
+                </li>
+                <li><a href="#">Sub-Menu 5</a>
+                </li>
+                <li><a href="#">Sub-Menu 6</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="icon-bullhorn"></i>BLOG</a>
+        </li>
+        <li><a href="#"><i class="icon-envelope-alt"></i>CONTACT</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!--carousel-->
+    <ul class="slides">
+      <input type="radio" name="radio-btn" id="img-1" checked />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="http://farm9.staticflickr.com/8072/8346734966_f9cd7d0941_z.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-6" class="prev">&#x2039;</label>
+          <label for="img-2" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-2" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-1" class="prev">&#x2039;</label>
+          <label for="img-3" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-3" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="http://farm9.staticflickr.com/8068/8250438572_d1a5917072_z.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-2" class="prev">&#x2039;</label>
+          <label for="img-4" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-4" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-3" class="prev">&#x2039;</label>
+          <label for="img-5" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-5" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-4" class="prev">&#x2039;</label>
+          <label for="img-6" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <input type="radio" name="radio-btn" id="img-6" />
+      <li class="slide-container">
+        <div class="slide">
+          <img src="http://farm9.staticflickr.com/8195/8098750703_797e102da2_z.jpg" />
+        </div>
+        <div class="nav">
+          <label for="img-5" class="prev">&#x2039;</label>
+          <label for="img-1" class="next">&#x203a;</label>
+        </div>
+      </li>
+
+      <li class="nav-dots">
+        <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+        <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+        <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+        <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+        <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+        <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+      </li>
+    </ul>
+
+
+    <div class="tilecontainer">
+      <div class="tile">
+        <label for="show-tile1" class="show-tile">Show Tile1</label>
+        <input type="checkbox" id="show-tile1" role="button">
+        <div id="tile1">
+          <div class="tilelogo">
+            <img src="http://farm9.staticflickr.com/8055/8098750623_66292a35c0_z.jpg" />
+          </div>
+          <h4 class="tileheader">Tile Header</h4>
+          <p class="tiledescription">some description some description some description some description</p>
+        </div>
+      </div>
+
+      <div class="tile">
+        <label for="show-tile2" class="show-tile">Show Tile2</label>
+        <input type="checkbox" id="show-tile2" role="button">
+        <div id="tile2">
+          <div class="tilelogo">
+            <img src="http://farm9.staticflickr.com/8061/8237246833_54d8fa37f0_z.jpg" />
+          </div>
+          <h4 class="tileheader">Tile Header</h4>
+          <p class="tiledescription">some description some description some description some description</p>
+        </div>
+      </div>
+
+      <div class="tile">
+        <label for="show-tile3" class="show-tile">Show Tile3</label>
+        <input type="checkbox" id="show-tile3" role="button">
+        <div id="tile3" >
+          <div class="tilelogo">
+            <img src="http://farm9.staticflickr.com/8504/8365873811_d32571df3d_z.jpg" />
+          </div>
+          <h4 class="tileheader">Tile Header</h4>
+          <p class="tiledescription">some description some description some description some description</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
