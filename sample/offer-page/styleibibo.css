@@ -1,0 +1,315 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+a, a:visited {
+    text-decoration: none;
+    cursor: pointer;
+    color: #2c67b3;
+    outline: 0;
+}
+
+/*padding and margin*/
+.padRight5 {
+    padding-right: 5px;
+}
+
+.padBottom15 {
+    padding-bottom: 15px;
+}
+
+.padBottom5 {
+    padding-bottom: 5px;
+}
+
+.marRight15 {
+    margin-right: 15px;
+}
+
+.marRight5 {
+    margin-right: 5px;
+}
+
+.marTop5 {
+    margin-top: 5px;
+}
+
+.marBottom5 {
+    margin-bottom: 5px;
+}
+/**/
+.brfontsize {
+    font-size: 11px;
+}
+/*common bg color*/
+.blue {
+    color: #2c67b3;
+}
+
+.gray {
+    color: #e6e6e6;
+}
+/*setting bold font weight*/
+.fbold {
+    font-weight: bold;
+}
+
+/*Tile related style */
+/* here traversing all Header footer and article */
+.offertile {
+    background: #fff;
+    overflow: hidden;
+}
+    /*offertile header traversing*/
+    .offertile header {
+        color: #868686;
+        padding: 10px;
+        line-height: 1.2em;
+        font-size: 20px;
+    }
+    /*offertile article traversing - offer logo shown in this*/
+    .offertile article {
+        background: gray;
+        padding: 10px;
+    }
+    /*offertile footer traversing , T&C one*/
+    .offertile footer {
+        font-size: 10px;
+        color: #868686;
+        padding: 12px;
+    }
+/*setting style for offerdetail section*/
+.offerdetails {
+    font-size: 14px;
+    color: #868686;
+    padding: 10px;
+}
+
+/*offerimage logo main sprite */
+/*accessing corresponding sprites in below style image1 to image4*/
+.offerimage {
+    background: url("sprite-airlines.png");
+    height: 75px;
+    width: 100px;
+    padding: 10px;
+}
+
+.image1 {
+    background-position: 0 0;
+}
+
+.image2 {
+    background-position: -114px 0;
+}
+
+.image3 {
+    background-position: -224px 0;
+}
+
+.image4 {
+    background-position: -342px 0;
+}
+
+/*tabicon logo main sprite */
+.tabimage {
+    background: url("sprite-airlines.png");
+    height: 23px;
+    width: 30px;
+    padding: 0px;
+    background-position-y: -89px;
+}
+
+.iconflight {
+    background-position-x: 0px;
+}
+
+.iconhotel {
+    background-position-x: -30px;
+}
+
+.iconnus {
+    background-position-x: -57px;
+    width: 24px;
+}
+
+.iconmobile {
+    background-position-x: -90px;
+    width: 21px;
+}
+
+.iconholiday {
+    background-position-x: -116px;
+    width: 27px;
+}
+
+.iconexpired {
+    background-position-x: -144px;
+    width: 27px;
+}
+/*tilecontainer style*/
+#tilecontainer ul {
+    padding-top: 15px;
+}
+
+    #tilecontainer ul li {
+        margin-bottom: 10px;
+    }
+
+.tilecontainer {
+    background: #e7e7e7;
+}
+
+/*Offer tab style*/
+/*Strip the ul of padding and list styling*/
+#tabcontainer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Create a horizontal list with spacing*/
+#tabcontainer li {
+    display: inline-block;
+    float: left;
+    margin-right: 1px;
+}
+
+    /*Style for tab links*/
+    #tabcontainer li a {
+        display: block;
+        min-width: 110px;
+        text-align: center;
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        color: #000;
+        background-color: #fff;
+        border: 1px solid #e6e6e6;
+        text-decoration: none;
+        padding: 10px;
+    }
+
+    /*Hover state for tab*/
+    #tabcontainer li:hover a {
+        background: #ccc;
+    }
+
+    /*Style for dropdown links*/
+    #tabcontainer li:hover ul a {
+        background: #f3f3f3;
+        color: #2f3036;
+        height: 40px;
+        line-height: 40px;
+    }
+
+        /*Hover state for dropdown links*/
+        #tabcontainer li:hover ul a:hover {
+            background: #19c589;
+            color: #fff;
+        }
+
+    /*Hide dropdown links until they are needed*/
+    #tabcontainer li ul {
+        display: none;
+    }
+
+        /*Make dropdown links vertical*/
+        #tabcontainer li ul li {
+            display: block;
+            float: none;
+        }
+
+            /*Prevent text wrapping*/
+            #tabcontainer li ul li a {
+                width: auto;
+                min-width: 100px;
+                padding: 0 20px;
+            }
+
+/*Display the dropdown on hover*/
+#tabcontainer ul li a:hover + .hidden, .hidden:hover {
+    display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+#tabcontainer .show-menu {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: #fff;
+    background: #19c589;
+    text-align: center;
+    padding: 10px 0;
+    display: none;
+}
+
+/*Hide checkbox*/
+#tabcontainer input[type=checkbox] {
+    display: none;
+}
+
+    /*Show menu when invisible checkbox is checked*/
+    #tabcontainer input[type=checkbox]:checked ~ #menu {
+        display: block;
+    }
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 760px) {
+    /*Make dropdown links appear inline*/
+    #tabcontainer ul {
+        position: static;
+        display: none;
+    }
+    /*Create vertical spacing*/
+    #tabcontainer li {
+        margin-bottom: 1px;
+    }
+        /*Make all menu links full width*/
+        #tabcontainer ul li, #tabcontainer li a {
+            width: 100%;
+        }
+    /*Display 'show menu' link*/
+    #tabcontainer .show-menu {
+        display: block;
+    }
+
+    #tilecontainer ul li {
+        margin-bottom: 10px;
+    }
+    #tabcontainer li a {
+        background:#20a0a8;
+        color:#fff;
+    }
+        #tabcontainer li a:hover {
+            background:#2f3036;
+        }
+}
+
+@media only screen and (min-width: 1024px) {
+    .tilecontainer {
+        height: 650px;
+    }
+
+    #tilecontainer ul li:nth-child(4) {
+        position: absolute;
+        left: 10px;
+        top: 323px;
+    }
+
+    #tilecontainer ul li:nth-child(5) {
+        position: absolute;
+        left: 383px;
+        top: 343px;
+    }
+
+    #tilecontainer ul li:nth-child(6) {
+        position: absolute;
+        left: 756px;
+        top: 333px;
+    }
+}
