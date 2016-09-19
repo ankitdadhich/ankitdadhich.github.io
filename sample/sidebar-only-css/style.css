@@ -116,4 +116,7 @@ input[type=checkbox]:checked ~ .sidebar li a header {
   .sidebar li a header {
     display: none;
   }
+  .container-fluid{
+  margin: 10px 10px 0 70px;
+}
 }
