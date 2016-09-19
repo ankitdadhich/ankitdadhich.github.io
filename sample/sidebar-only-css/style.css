@@ -1,0 +1,113 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.sidebar-container {
+  position: absolute;
+  height: 100%;
+  background: #e8e8e8;
+  padding-top: 11px;
+  top:0;
+}
+
+.sidebar {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  display: block;
+  width: 100%;
+  width: 189px;
+  margin-top: 15px;
+  background: #e8e8e8;
+  transition: all 0.5s;
+}
+
+.sidebar li a {
+  color: #2c95dd;
+  display: block;
+  background: transparent;
+  text-decoration: none;
+  position: relative;
+  line-height: 40px;
+  padding: 7px;
+  text-align: center;
+  font-size: 19px;
+  cursor: pointer;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.sidebar li:last-child a {
+  position: absolute;
+  border-bottom: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.sidebar li a span {
+  display: block;
+  font-size: 30px;
+}
+
+.sidebar li a:hover {
+  background-color: #2c95dd;
+  color: #fff;
+}
+
+.sidebar li a:target {
+  background-color: #fff;
+  color: #000;
+}
+
+.sidebar .icon {
+  font-size: 14px;
+}
+
+.sidebar li.selected a {
+  background-color: #2c95dd;
+  color: #fff;
+}
+
+.sidebar li.selected a:hover {
+  background-color: #2c95dd;
+}
+
+input[type=checkbox]:checked ~ .sidebar {
+  display: block;
+  width: 60px;
+  transition: all 0.5s;
+}
+
+input[type=checkbox] ~ .menu-icon {
+  font-size: 22px;
+  display: block;
+  padding: 5px 5px 5px 17px;
+  background: #1c4369;
+  color: #fff;
+}
+
+
+/* hiding menu header when sidebar menu is clicked */
+
+input[type=checkbox]:checked ~ .sidebar li a header {
+  display: none;
+}
+
+.container-fluid{
+  margin: 50px 20px 0 200px;
+}
+/* In mobile screen it will shrink by default */
+
+@media only screen and (max-width: 500px) {
+  .sidebar {
+    display: block;
+    width: 60px;
+    transition: all 0.5s;
+  }
+  /* hiding menu header when sidebar menu is clicked */
+  .sidebar li a header {
+    display: none;
+  }
+}
